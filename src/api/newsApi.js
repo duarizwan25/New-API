@@ -8,7 +8,7 @@ export const fetchFromGuardian = async ({ queryKey }) => {
     'page-size': pageSize || 12,
     page: page || 1,
     'show-fields': 'trailText,thumbnail,byline',
-    'api-key': process.env.VITE_GUARDIAN_API_KEY
+    'api-key': import.meta.env.VITE_GUARDIAN_API_KEY
   }
 
   const res = await axios.get('/guardian/search', { params })
