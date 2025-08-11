@@ -1,0 +1,57 @@
+:root {
+  --bg: #1f1f1f;       /* background */
+  --navbar: #262626;   /* navbar background */
+  --accent: #e67e22;   /* accent color */
+  --heading: #ffffff;  /* title text */
+  --muted: #b3b3b3;    /* muted text */
+}
+
+.custom-navbar {
+  background-color: var(--navbar);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 28px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar-container {
+  flex: 1;
+  margin-right: 16px;
+  margin-top: 20px;
+}
+
+.custom-search .ant-input {
+  background-color: #2e2e2e;
+  border: 1px solid #444;
+  color: white;
+}
+
+.custom-search .ant-input::placeholder {
+  color: var(--muted);
+}
+
+.custom-search .ant-btn {
+  background-color: var(--accent);
+  border: none;
+  color: #fff;
+}
+
+.logo-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--heading);
+}
+
+.center-content {
+  text-align: center;
+  padding: 80px;
+}
+
+.error {
+  color: var(--accent);
+  font-weight: bold;
+}

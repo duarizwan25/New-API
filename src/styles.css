@@ -1,0 +1,48 @@
+:root {
+  --accent: #C79277;
+  --navbar: #E2C2B0;
+  --heading: #6E7360;
+  --card: #C0C0AE;
+  --muted: #B0B095;
+  --bg: #f6f4f1;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: var(--bg);
+  color: var(--heading);
+}
+
+.ant-card {
+  background: var(--card) !important;
+}
+
+/* Override AntD small bits */
+.ant-pagination-item a, .ant-pagination-prev, .ant-pagination-next {
+  color: var(--heading);
+}
+.ant-pagination .ant-pagination-item-active a {
+  background: var(--accent);
+  color: #fff;
+}
+.ant-empty-description {
+  color: var(--heading);
+}
+
+/* Search input rounded */
+.ant-input-affix-wrapper, .ant-input {
+  border-radius: 10px;
+}
+
+/* Card hover */
+.ant-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+/* Make header title and text use palette */
+h1,h2,h3,h4,h5,h6 {
+  color: var(--heading);
+}
