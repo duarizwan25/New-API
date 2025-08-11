@@ -19,7 +19,7 @@ export default function ArticleCard({ article }) {
         height: '100%',
         display: 'flex',
         flexDirection: 'column',
-        color: '#000' // Ensure default text color is black
+        color: '#000'
       }}
       bodyStyle={{
         padding: 16,
@@ -45,7 +45,7 @@ export default function ArticleCard({ article }) {
         <div
           style={{
             fontWeight: 700,
-            color: '#000', // black title
+            color: '#000',
             marginBottom: 8
           }}
         >
@@ -53,7 +53,7 @@ export default function ArticleCard({ article }) {
         </div>
         <div
           style={{
-            color: '#000', // black description text
+            color: '#000',
             fontSize: 13
           }}
           dangerouslySetInnerHTML={{
